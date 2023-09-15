@@ -9,17 +9,17 @@ import com.example.demo.multi.service.MultiService;
 @Controller
 public class MultiController {
 
-	private final MultiService MultiService;
+	private final MultiService multiService;
 
-	public MultiController(MultiService MultiService) {
-		this.MultiService = MultiService;
+	public MultiController(MultiService multiService) {
+		this.multiService = multiService;
 	}
 
 	@GetMapping("multi")
-	public String Multi(Model model) {
+	public String multi(Model model) {
 		String result = "";
 
-		result = String.valueOf(MultiService.Multi(5, 6));
+		result = String.valueOf(multiService.multi(5, 6));
 
 		model.addAttribute("result", result);
 
