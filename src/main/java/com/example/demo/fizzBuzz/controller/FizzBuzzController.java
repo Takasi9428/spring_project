@@ -19,9 +19,7 @@ public class FizzBuzzController {
 
 	@GetMapping("fizzBuzz")
 	public String multi(Model model) {
-		ArrayList<String> result = new ArrayList<String>();
-
-		result = fizzBuzzService.calculation();
+		ArrayList<String> result = fizzBuzzService.calculation();
 
 		model.addAttribute("result", result);
 

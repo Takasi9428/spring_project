@@ -24,7 +24,7 @@ public class FizzBuzzService {
 			} else {
 				fizzBuzzList.add(Integer.toString(i));
 			}
-		}
+		 }		
 		return fizzBuzzList;
 	}
 }
